@@ -8,12 +8,12 @@
 // L’utente sceglie un numero da 1 a 5
 // const userNum = parseInt(prompt("Scegli un num da 1 a 5"));
 // console.log(userNum);
-let userNum;
-do{
-    userNum = parseInt(prompt("Scegli un num da 1 a 5"));
-}
-while (userNum < 5) || (isNaN(userNum)); 
+userNum = parseInt(prompt("Scegli un num da 1 a 5"));
+if ( ((userNum < 5) || (isNaN(userNum) )) {
     alert("Non è un num da 1 a 5");
+}
+
+ 
 
 console.log(userNum);
 

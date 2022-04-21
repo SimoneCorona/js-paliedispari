@@ -9,11 +9,10 @@
     const userWorldchoice = prompt("Dimmi una parola e ti dirò se è palindroma") 
     console.log(userWorldchoice);
 
-    const userWorldsplit = userWorldchoice.split(" ");
-    console.log(userWorldsplit);
-
-    // const reverseWorld = userWorldchoice[]
-    // console.log(reverseWorld);
+    // const userWorldsplit = userWorldchoice.slice(0);
+    // console.log(userWorldsplit);
+     userWorldchoice.toString;
+    console.log();
 
 
 
