@@ -7,9 +7,9 @@
 
 // function checkPalindrom (){
     const userWorldchoice = prompt("Dimmi una parola e ti dirò se è palindroma") 
-    console.log(userWorldchoice, userWorldchoice.length, userWorldchoice[]);
+    console.log(userWorldchoice);
 
-    // const userWorldsplit = userWorldchoice.split();
+    const userWorldsplit = userWorldchoice.split(" ");
     console.log(userWorldsplit);
 
     // const reverseWorld = userWorldchoice[]
