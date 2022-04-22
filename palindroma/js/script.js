@@ -4,14 +4,16 @@
 const word = prompt("Dimmi una parola e ti dirò se è palindroma");
 console.log(word);
 
-const wordReverse = reverse();
+const wordReverse = reverse(word);
 console.log(wordReverse);
 
-const palindrom = palindromeCheck()
-console.log(palindrom)
+const palindrom = palindromeCheck(word, wordReverse)
+console.log(palindrom);
 
+//FUNCTIONS
 
-function reverse(world) {
+// Reverse user' s word 
+function reverse(word) {
     let wordReverse = '';
     for (let index = word.length - 1; index >= 0; index--) {
         wordReverse += word[index];  
@@ -19,6 +21,7 @@ function reverse(world) {
     return wordReverse;
 }
 
+//Check if user' s word and user word' s reversed are ugual
 function palindromeCheck(word, wordReverse) {
     let palindrom;
     if (word === wordReverse) {
@@ -27,11 +30,3 @@ function palindromeCheck(word, wordReverse) {
         palindrom = 'no'   
     return palindrom;
 } 
-    // if (word === reverse()) {
-    //     console.log('palindroma');
-    // } else {
-    //     console.log('no');
-    // }
-
-
-// creare una funzione che accetti come argomento WORD e che restitusca WORDREVERSE;
